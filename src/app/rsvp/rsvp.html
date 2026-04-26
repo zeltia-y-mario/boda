@@ -1,0 +1,73 @@
+<div class="content-container">
+  <div class="info">
+    <h3>Por favor, avísanos</h3>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, nostrum cumque, quaerat
+      quos modi, minima dolorem expedita in voluptatum numquam incidunt corrupti vitae quisquam
+      adipisci.
+    </p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+
+    <!-- Form Inputs. Each input must have a name="" attribute -->
+    <div class="field">
+      <label for="name" class="form-label">Nombre y appellidos:</label>
+      <input type="text" id="name" name="name" required />
+    </div>
+    <div class="field">
+      <label for="menu" class="form-label">Menu:</label>
+      <div class="options">
+        <div>
+          <input type="radio" id="carne" name="menu" value="Carne" checked />
+          <label for="carne">Carne</label>
+        </div>
+
+        <div>
+          <input type="radio" id="pescado" name="menu" value="Pescado" />
+          <label for="pescado">Pescado</label>
+        </div>
+
+        <div>
+          <input type="radio" id="vegetariano" name="menu" value="Vegetariano" />
+          <label for="vegetariano">Vegetariano</label>
+        </div>
+        <div>
+          <input type="radio" id="végano" name="menu" value="Vegano" />
+          <label for="végano">Vegano</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="bus" class="form-label">Necesitas autobus? </label>
+      <div class="options">
+        <div>
+          <input type="radio" id="bus-si" name="bus" value="Si" />
+          <label for="bus-si">Sí</label>
+        </div>
+        <div>
+          <input type="radio" id="bus-no" name="bus" value="No" />
+          <label for="bus-no">No</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="allergies" class="form-label">Alergias o intolerancias:</label>
+      <textarea id="allergies" name="message" required></textarea>
+    </div>
+
+    <!-- Honeypot Spam Protection -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
+
+    <!-- Custom Confirmation / Success Page -->
+    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+    <button type="submit">Enviar</button>
+  </form>
+</div>

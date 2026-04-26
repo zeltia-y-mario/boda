@@ -1,0 +1,16 @@
+<!-- <div [class.active]="active() === 'inicio'">Inicio</div> -->
+
+<div class="toolbar-container">
+  <div class="title">Z & M</div>
+  <div class="navigation">
+    @for (item of links; track item.id) {
+      <div
+        class="section-link"
+        [class.active]="active() === item.id"
+        (click)="sectionClicked.emit(item.id)"
+      >
+        {{ item.label }}
+      </div>
+    }
+  </div>
+</div>
