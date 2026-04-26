@@ -1,4 +1,57 @@
 :host {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 800px;
+
+  padding: 80px;
+
+  background-color: rgb(90, 107, 84);
+  color: white;
+
+  .content {
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .gracias {
+    font-size: 40px;
+  }
+
+  .gracias-content {
+  }
+
+  .iban {
+    margin-top: 24px;
+  }
+
+  .contactos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    height: 64px;
+
+    .contacto {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex-direction: column;
+      width: 120px;
+      height: 100%;
+
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+  }
+
+  .monteserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  // .icono-regalo {
+  //   height: 200px;
+  //   width: 200px;
+  // }
 }

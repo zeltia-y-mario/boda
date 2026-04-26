@@ -14,6 +14,6 @@ export class Toolbar {
     { id: 'inicio', label: 'Inicio' },
     { id: 'detalles', label: 'Detalles' },
     { id: 'rsvp', label: 'RSVP' },
-    { id: 'regalo', label: 'Regalo' },
+    { id: 'regalo', label: 'Información extra' },
   ];
 }

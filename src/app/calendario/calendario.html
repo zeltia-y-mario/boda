@@ -1,0 +1,50 @@
+<div class="content">
+  <div class="fecha">
+    <div>Viernes</div>
+    <div class="fecha-day">25</div>
+    <div>Septiembre</div>
+  </div>
+
+  <div class="faltan">FALTAN</div>
+
+  <div class="countdown-container">
+    <div class="countdown-item">
+      <div class="value">{{ countdown().days }}</div>
+      <div class="label">Días</div>
+    </div>
+    <div class="countdown-item">
+      <div class="value">{{ countdown().hours }}</div>
+      <div class="label">Horas</div>
+    </div>
+    <div class="countdown-item">
+      <div class="value">{{ countdown().minutes }}</div>
+      <div class="label">Minutos</div>
+    </div>
+  </div>
+
+  <div class="mes">Septiembre</div>
+
+  <div class="calendar">
+    <div class="week-day">Lun</div>
+    <div class="week-day">Mar</div>
+    <div class="week-day">Mié</div>
+    <div class="week-day">Jue</div>
+    <div class="week-day">Vie</div>
+    <div class="week-day">Sáb</div>
+    <div class="week-day">Dom</div>
+
+    @for (week of calendar; track $index) {
+      @for (day of week; track $index) {
+        @if (day === 25) {
+          <div class="day">
+            <div class="material-symbols-outlined icon">favorite</div>
+
+            {{ day }}
+          </div>
+        } @else {
+          <div class="day">{{ day }}</div>
+        }
+      }
+    }
+  </div>
+</div>

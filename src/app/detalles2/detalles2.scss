@@ -16,55 +16,35 @@
   gap: 24px;
 }
 
-.header {
+.detail-item {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-
-.eyebrow {
-  display: inline-block;
-  font-size: 0.85rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #5f6f52;
-  font-weight: 700;
-}
-
-h2 {
-  margin: 0;
-  font-size: clamp(2rem, 2.4vw, 2.6rem);
-  color: #304b2f;
-  line-height: 1.05;
-}
-
-.detail-item {
-  display: grid;
-  grid-template-columns: auto 1fr;
   gap: 20px;
   align-items: center;
   padding: 18px 0;
 }
 
 .icon {
-  width: 62px;
-  height: 62px;
-  border-radius: 22px;
+  width: 70px;
+  height: 70px;
+  // border-radius: 22px;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, rgba(131, 157, 97, 0.18), rgba(95, 111, 82, 0.24));
+  // background: linear-gradient(135deg, rgba(131, 157, 97, 0.18), rgba(95, 111, 82, 0.24));
   color: #4d6d40;
-  box-shadow: inset 0 0 0 1px rgba(95, 111, 82, 0.14);
+  // box-shadow: inset 0 0 0 1px rgba(95, 111, 82, 0.14);
 }
 
 .icon .material-symbols-outlined {
-  font-size: 28px;
+  font-size: 70px;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  font-size: 24px;
+  text-align: center;
 }
 
 .label {
@@ -116,7 +96,7 @@ a {
 
 @media (max-width: 720px) {
   :host {
-    padding: 20px;
+    padding: 0;
   }
 
   .details-container {
@@ -124,11 +104,7 @@ a {
   }
 
   .detail-item {
-    grid-template-columns: 1fr;
-  }
-
-  .icon {
-    width: 52px;
-    height: 52px;
+    flex-direction: column;
+    gap: 16px;
   }
 }
