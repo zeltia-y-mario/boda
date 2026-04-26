@@ -10,9 +10,9 @@
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
   </div>
 
-  <form action="https://api.web3forms.com/submit" method="POST">
+  <form (submit)="onSubmit($event)" action="https://api.web3forms.com/submit" method="POST">
     <!-- Replace with your Access Key -->
-    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+    <input type="hidden" name="access_key" value="1bdb1e3a-5aa9-4e13-a801-4f3bee7eed2f" />
 
     <!-- Form Inputs. Each input must have a name="" attribute -->
     <div class="field">
@@ -59,7 +59,7 @@
 
     <div class="field">
       <label for="allergies" class="form-label">Alergias o intolerancias:</label>
-      <textarea id="allergies" name="message" required></textarea>
+      <textarea id="allergies" name="alergias" required></textarea>
     </div>
 
     <!-- Honeypot Spam Protection -->

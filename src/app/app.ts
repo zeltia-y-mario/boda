@@ -9,7 +9,7 @@ import { Detalles } from './detalles/detalles';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Toolbar, Inicio, Rsvp, Regalo, Gracias, Detalles],
+  imports: [Toolbar, Inicio, Rsvp, Regalo, Gracias, Detalles],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
