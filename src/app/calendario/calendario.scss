@@ -4,7 +4,7 @@
 
   background-color: rgb(90, 107, 84);
   color: white;
-  padding: 40px;
+  padding: 40px 16px;
 }
 
 .content {
@@ -40,6 +40,7 @@
   }
 
   .faltan {
+    margin-top: 24px;
     font-size: 24px;
   }
 
@@ -87,6 +88,8 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     row-gap: 20px;
+    column-gap: 24px;
+    width: 100%;
 
     .week-day {
       text-transform: uppercase;
