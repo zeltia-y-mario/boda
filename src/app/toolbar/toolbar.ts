@@ -11,8 +11,8 @@ export class Toolbar {
   readonly sectionClicked = output<string>();
 
   protected readonly links = [
-    { id: 'inicio', label: 'Inicio' },
-    { id: 'detalles', label: 'Detalles' },
+    // { id: 'inicio', label: 'Inicio' },
+    { id: 'calendario', label: 'Detalles' },
     { id: 'rsvp', label: 'RSVP' },
     { id: 'regalo', label: 'Información extra' },
   ];

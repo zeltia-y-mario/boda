@@ -20,6 +20,11 @@
 
     .description {
       padding: 0 80px;
+      text-align: justify;
+
+      @media (max-width: 620px) {
+        padding: 0 24px;
+      }
     }
   }
 
