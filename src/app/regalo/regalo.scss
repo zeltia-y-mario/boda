@@ -19,11 +19,11 @@
     text-align: center;
 
     .description {
-      padding: 0 80px;
+      padding: 24px 80px;
       text-align: justify;
 
       @media (max-width: 620px) {
-        padding: 0 24px;
+        padding: 24px 24px;
       }
     }
   }
