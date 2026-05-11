@@ -1,4 +1,12 @@
-import { ChangeDetectionStrategy, Component, OnDestroy, OnInit, signal } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  OnDestroy,
+  OnInit,
+  signal,
+} from '@angular/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-inicio',
@@ -16,6 +24,17 @@ export class Inicio implements OnInit, OnDestroy {
     minutes: 0,
     seconds: 0,
   });
+
+  isMobile = signal(true);
+
+  constructor() {
+    inject(BreakpointObserver)
+      .observe([Breakpoints.HandsetLandscape, Breakpoints.HandsetPortrait])
+      .subscribe((result) => {
+        console.log(result);
+        this.isMobile.set(result.matches);
+      });
+  }
 
   ngOnInit() {
     this.updateCountdown();

@@ -23,6 +23,8 @@ export class Rsvp {
 
   protected async onSubmit(event: Event) {
     event.preventDefault();
+    // this.dialog.open(RsvpSuccessDialog);
+    // return;
 
     const form = event.target as HTMLFormElement;
     const formData = new FormData(form);
