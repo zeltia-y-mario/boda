@@ -1,10 +1,7 @@
-<div>
-  <div class="bg">
-    <!-- <img src="boda_jardin2.png" alt="" /> -->
-    @if (isMobile()) {
-      <img src="fotos.jfif" alt="" class="foto-movil" />
-    } @else {
-      <img src="fotos_desktop.jpeg" alt="" class="foto-desktop" />
-    }
-  </div>
+<div class="bg">
+  @if (isMobile()) {
+    <img src="fotos.jfif" class="foto-movil" />
+  } @else {
+    <img src="fotos_desktop.jpeg" class="foto-desktop" />
+  }
 </div>
