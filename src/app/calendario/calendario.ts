@@ -15,7 +15,7 @@ export class Calendario {
     [28, 29, 30],
   ];
 
-  private targetDate = new Date('2026-09-21T15:00:00'); // Fecha y hora del evento
+  private targetDate = new Date('2026-09-25T17:45:00'); // Fecha y hora del evento
   private intervalId?: number;
 
   protected readonly countdown = signal({
